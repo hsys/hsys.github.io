@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="byName">
+
+	<bean id="userServiceProvider" class="com.taobao.hsf.app.spring.util.HSFSpringProviderBean"
+		init-method="init">
+		<property name="serviceInterface">
+			<value>net.taobao.service.UserService</value>
+		</property>
+		<property name="target">
+			<ref bean="userService" />
+		</property>
+		<property name="serviceName">
+			<value>UserService</value>
+		</property>
+		<property name="serviceVersion">
+			<value>1.0.0.daily</value>
+		</property>
+		<property name="serviceGroup">
+			<value>HSF</value>
+		</property>
+		<!--serializeType为可选配置[String(hessian|java)]，含义为序列化类型，默认为hessian-->
+	    <property name="serializeType">
+	      <value>java</value>
+	    </property>
+	</bean>
+</beans>

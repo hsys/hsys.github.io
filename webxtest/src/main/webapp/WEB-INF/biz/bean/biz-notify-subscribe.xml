@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="byName">
+
+	<bean id="subscribeNotifyManager" class="com.taobao.hsf.notify.client.NotifyManagerBean"	init-method="init">
+		<property name="subscribeMessages">
+			<map>
+			    <!-- topic -->
+				<entry key="FEEDCENTER">
+					<map>
+					    <!-- messageTypes-->
+						<entry key="feed-create">
+							<bean class="com.taobao.hsf.notify.client.SubscriptMsgDetailInfo">
+								<property name="persistence" value="true" />
+								<property name="waterMark" value="-1" />
+							</bean>
+						</entry>
+					</map>
+				</entry>
+			</map>
+		</property>
+		<property name="groupId" value="S-taojianghu-rate2home"/>
+		<property name="name" value="subscribeNotifyManager" />
+		<property name="description" value="subscribeNotifyManager" />
+		<property name="messageListener" ref="messageListener" />
+	</bean>
+
+	<bean id="messageListener" class="net.taobao.notify.SimpleMessageListener" />	
+</beans>

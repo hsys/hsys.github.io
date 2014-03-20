@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.taobao.tbdatasource:tbdatasource:2.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/tbdatasource/tbdatasource/2.0.0-SNAPSHOT/tbdatasource-2.0.0-20100914.094309-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/tbdatasource/tbdatasource/2.0.0-SNAPSHOT/tbdatasource-2.0.0-20100914.094309-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/tbdatasource/tbdatasource/2.0.0-SNAPSHOT/tbdatasource-2.0.0-20100914.094309-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

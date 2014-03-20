@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="GB2312"?>
+<configuration>
+    <services>
+        <service name="BeanFactoryService" class="com.alibaba.service.spring.DefaultBeanFactoryService">
+            <property name="bean.descriptors">
+				<value>/WEB-INF/biz/bean/biz-tair.xml</value>
+				<value>/WEB-INF/biz/bean/biz-services.xml</value>
+				<value>/WEB-INF/biz/bean/biz-dao.xml</value>
+				
+				<!-- hsf config 
+				<value>/WEB-INF/biz/bean/biz-hsf-service.xml</value>
+				<value>/WEB-INF/biz/bean/biz-hsf-client.xml</value>
+				-->
+				
+				<!-- tddl bean 
+				<value>/WEB-INF/biz/bean/biz-tddl.xml</value>
+				-->
+				<!-- diamond
+				<value>/WEB-INF/biz/bean/biz-diamond.xml</value>
+				 -->
+				<!-- notify -->
+				<!-- 
+				<value>/WEB-INF/biz/bean/biz-notify-publish.xml</value>
+				<value>/WEB-INF/biz/bean/biz-notify-subscribe.xml</value>
+				 -->
+				
+            </property>
+        </service>
+    </services>
+</configuration>

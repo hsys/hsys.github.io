@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  	<servlet-name>webxControllerServlet</servlet-name>
+  	<servlet-class>com.alibaba.webx.WebxControllerServlet</servlet-class>
+  	<init-param>
+  		<param-name>initAllServices</param-name>
+  		<param-value>true</param-value>
+  	</init-param>
+  	
+  	<!-- <init-param>
+		<param-name>webx.components</param-name>
+		<param-value>home</param-value>
+	</init-param>
+	<init-param>
+		<param-name>default.component</param-name>
+		<param-value>home</param-value>
+	</init-param> -->
+	
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>webxControllerServlet</servlet-name>
+  	<url-pattern>*.htm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>webxControllerServlet</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

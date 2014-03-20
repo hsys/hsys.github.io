@@ -1,0 +1,3 @@
+#macro(showTitle $title)
+	<title>$!title</title>
+#end

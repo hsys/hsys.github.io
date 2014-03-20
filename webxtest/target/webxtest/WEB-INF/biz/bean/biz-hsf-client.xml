@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="byName">
+
+	<bean id="userServiceRemote" class="com.taobao.hsf.app.spring.util.HSFSpringConsumerBean">
+		<!--interfaceName必须配置[String]，为需要调用的服务的接口 -->
+		<property name="interfaceName">
+			<value>net.taobao.service.UserService</value>
+		</property>
+		<!--version为可选配置[String]，含义为需要调用的服务的版本，默认为1.0.0 -->
+		<property name="version">
+			<value>1.0.0.daily</value>
+		</property>
+		<!--group为可选配置[String]，含义为需要调用的服务所在的组，默认为HSF -->
+		<property name="group">
+			<value>HSF</value>
+		</property>
+		<!--target为可选配置[String]，含义为需调用的服务的地址和端口 -->
+		<!--主要用于单元测试环境和hsf.runmode=0的开发环境中，在运行环境下，此属性将无效，而是采用配置中心推送回来的目标服务地址信息 -->
+		<property name="target">
+			<value>10.13.16.24:12200?_TIMEOUT=1000</value>
+		</property>
+	</bean>
+
+</beans>

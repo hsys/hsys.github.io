@@ -1,0 +1,4 @@
+
+$page.setTitle("页面标题")
+<div style="height:28px;border:1px solid #ff0000;">这里是页面内容</div>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="byName">
+
+	<bean id="publishNotifyManager" class="com.taobao.hsf.notify.client.NotifyManagerBean" init-method="init">
+        <property name="publishTopics">
+			<list>
+				<value>FEEDCENTER</value>
+			</list>
+		</property>
+		<property name="groupId" value="S-taojianghu-rate2home"/>
+		<property name="name" value="publishNotifyManager"/>
+		<property name="description" value="publishNotifyManager"/>
+		<property name="checkMessageListener" ref="checkMessageListener"/>
+    </bean>
+
+    <bean id="checkMessageListener" class="net.taobao.notify.SimpleCheckMessage" />
+    
+</beans>

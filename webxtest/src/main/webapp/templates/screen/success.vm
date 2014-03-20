@@ -1,0 +1,8 @@
+<div >
+	Register Success!<br />
+	UserName: $!username <br />
+	Password: $!password <br />
+	Email: $!user.email <br />
+	
+	<a href="/user.htm">回到用户列表</a>
+</div>

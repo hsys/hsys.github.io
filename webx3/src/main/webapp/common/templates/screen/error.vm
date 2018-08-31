@@ -1,6 +1,0 @@
-<!--
-  #if ($error.exception)
-    $exceptionUtil.getStackTrace($error.exception)
-  #end
--->
-这里是测试页面
